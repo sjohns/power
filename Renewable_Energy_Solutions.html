@@ -63,6 +63,7 @@
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-container").innerHTML = data;
+            setActiveLink();
         });
 
     // Load the footer
@@ -70,8 +71,22 @@
         .then(response => response.text())
         .then(data => {
             document.getElementById("bottom-nav-container").innerHTML = data;
+            setActiveLink();
         });
+
+    // Function to add 'active' class to the current page's link
+    function setActiveLink() {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('a[href]');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+            }
+        });
+    }
 </script>
+
 
 
   <!-- Schema Markup for SEO -->
