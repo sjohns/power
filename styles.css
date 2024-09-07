@@ -21,6 +21,11 @@ header {
   padding: 20px;
   text-align: center;
 }
+/* Active Link Styles */
+nav ul li a.active {
+  font-weight: bold;
+  color: #23D160;
+}
 
 nav ul {
   display: flex;
