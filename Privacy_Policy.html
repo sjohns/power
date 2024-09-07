@@ -10,19 +10,10 @@
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="Privacy_Policy.html"><span class="active">Privacy Policy</span></a></li>
-        <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-      </ul>
-    </nav>
+<!-- Container for header -->
+<div id="header-container"></div>
     <h1>Privacy Policy</h1>
-  </header>
+
 
   <main id="main-content">
 
@@ -63,8 +54,18 @@
 
   </main>
 
+<!-- Container for footer -->
 <div id="bottom-nav-container"></div>
+
 <script>
+    // Load the header
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        });
+
+    // Load the footer
     fetch("bottom-nav.html")
         .then(response => response.text())
         .then(data => {
