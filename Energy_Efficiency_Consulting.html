@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energy Efficiency Consulting | BayMount Power</title>
-  <meta name="description" content="Optimize your energy use with BayMount Power's expert energy efficiency consulting services. Discover opportunities to reduce costs and improve sustainability.">
-  <meta name="keywords" content="BayMount Power, Energy Efficiency Consulting, Energy Audits, Sustainability, Cost Reduction">
+  <meta name="description" content="BayMount Power offers energy efficiency consulting services that help businesses optimize energy use, reduce waste, and lower operational costs.">
+  <meta name="keywords" content="Energy Efficiency, Consulting, Energy Optimization, Cost Reduction, BayMount Power">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,36 +15,50 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Efficiency Consulting</span></li>
       </ul>
     </nav>
     <h1>Energy Efficiency Consulting</h1>
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <p><strong>BayMount Power</strong> helps businesses optimize their energy use through expert energy efficiency consulting. Our team works with you to identify inefficiencies and develop actionable strategies that reduce costs while improving operational performance.</p>
+      <h2>Optimize Your Energy Use with Expert Consulting</h2>
+      <p>At <strong>BayMount Power</strong>, we provide energy efficiency consulting services designed to help businesses optimize their energy consumption, reduce waste, and lower operational costs. Our expert consultants work closely with your team to identify inefficiencies and implement sustainable solutions that align with your business goals.</p>
     </section>
 
+    <!-- Our Approach Section -->
     <section>
-      <h2>Our Energy Efficiency Services Include:</h2>
+      <h3>Our Energy Efficiency Approach</h3>
       <ul>
-        <li>Energy audits and assessments to pinpoint inefficiencies.</li>
-        <li>Customized energy-saving strategies for your business.</li>
-        <li>Implementation support and ongoing performance monitoring.</li>
+        <li><strong>Energy Audits:</strong> We perform in-depth energy audits to assess your current energy usage and identify opportunities for optimization.</li>
+        <li><strong>Customized Efficiency Plans:</strong> Based on audit findings, we develop tailored energy efficiency plans focused on reducing waste and improving overall energy performance.</li>
+        <li><strong>Technology Integration:</strong> We help implement the latest energy-saving technologies, including smart building systems, energy-efficient equipment, and automation solutions.</li>
+        <li><strong>Ongoing Monitoring:</strong> We provide continuous monitoring and tracking of energy usage to ensure long-term sustainability and cost savings.</li>
       </ul>
-
-      <h3>Why Energy Efficiency Matters</h3>
-      <p>Improving energy efficiency is not only cost-effective but also essential for reducing your environmental footprint. BayMount Power provides the insights and tools you need to achieve long-term energy savings and sustainability.</p>
-
-      <div class="cta">
-        <a href="contact.html" class="btn">Start Optimizing Energy Efficiency</a>
-      </div>
     </section>
+
+    <!-- Benefits of Energy Efficiency Consulting Section -->
+    <section>
+      <h3>Why Choose BayMount Power for Energy Efficiency Consulting?</h3>
+      <ul>
+        <li><strong>Cost Reduction:</strong> Our strategies help businesses cut energy costs through better energy management and efficiency improvements.</li>
+        <li><strong>Environmental Impact:</strong> Reducing energy waste minimizes your business’s carbon footprint, helping you meet sustainability goals.</li>
+        <li><strong>Improved Performance:</strong> Energy efficiency often leads to enhanced operational performance and productivity.</li>
+        <li><strong>Regulatory Compliance:</strong> Stay compliant with energy efficiency regulations and industry standards.</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="contact.html" class="btn btn-primary">Schedule a Free Energy Efficiency Consultation</a>
+    </div>
+
   </main>
 
   <footer>
@@ -53,11 +67,10 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Efficiency Consulting</span></li>
       </ul>
     </div>
     <div class="footer-column">
@@ -67,18 +80,42 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
 
+  <!-- Script for smooth fade-in animation -->
   <script>
-    // Smooth fade-in animation for sections
     window.addEventListener('load', () => {
       document.querySelectorAll('section').forEach(section => {
         section.classList.add('visible');
       });
     });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Energy Efficiency Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "BayMount Power",
+      "url": "https://1eef3649.power-1to.pages.dev/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
   </script>
 
 </body>

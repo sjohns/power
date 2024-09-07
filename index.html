@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | BayMount Power</title>
-  <meta name="description" content="BayMount Power provides innovative energy solutions and services for businesses. Learn more about our energy consulting, power generation, and risk management services.">
-  <meta name="keywords" content="BayMount Power, Energy Solutions, Energy Consulting, Renewable Energy, Risk Management">
+  <meta name="description" content="Welcome to BayMount Power. We provide innovative energy solutions, helping businesses reduce costs, improve efficiency, and transition to renewable energy sources.">
+  <meta name="keywords" content="BayMount Power, Energy Solutions, Renewable Energy, Risk Management, Energy Efficiency">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,23 +25,36 @@
   </header>
 
   <main id="main-content">
+
+    <!-- Call to Action (CTA) Section -->
+    <div class="cta">
+      <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+    </div>
+
+    <!-- Introduction Section -->
     <section>
-      <h2>Innovative Energy Solutions</h2>
-      <p>At <strong>BayMount Power</strong>, we provide innovative energy solutions tailored to meet the unique needs of your business. From renewable energy consulting to risk management services, we help companies reduce costs, enhance efficiency, and minimize risks in the ever-changing energy landscape.</p>
+      <h2>Innovative Energy Solutions for Businesses</h2>
+      <p><strong>BayMount Power</strong> specializes in delivering customized energy solutions to meet the unique needs of your business. From renewable energy consulting to risk management, we empower companies to reduce costs, enhance operational efficiency, and transition smoothly into renewable energy systems.</p>
     </section>
 
+    <!-- Why Choose Us Section -->
     <section>
-      <h2>Why Choose Us?</h2>
+      <h3>Why Choose BayMount Power?</h3>
       <ul>
-        <li><strong>Experience</strong>: Over 20 years of expertise in energy consulting, power generation, and sustainability.</li>
-        <li><strong>Comprehensive Solutions</strong>: Tailored strategies to help your business achieve long-term success in the energy sector.</li>
-        <li><strong>Proven Track Record</strong>: Successfully implemented renewable energy projects and risk management strategies.</li>
+        <li><strong>20+ Years of Expertise:</strong> We bring decades of experience in energy consulting, sustainability, and power generation.</li>
+        <li><strong>Comprehensive Solutions:</strong> Our strategies are designed to support long-term business success in the energy sector.</li>
+        <li><strong>Proven Success:</strong> We’ve successfully implemented numerous renewable energy projects, reducing costs and risks for our clients.</li>
       </ul>
-
-      <div class="cta">
-        <a href="services.html" class="btn">Explore Our Services</a>
-      </div>
+      <a href="services.html" class="btn btn-secondary">Learn More About Our Solutions</a>
     </section>
+
+    <!-- Get in Touch Section -->
+    <section>
+      <h3>Get in Touch Today</h3>
+      <p>Contact us to learn how we can help your business with energy-saving solutions, risk management, and renewable energy adoption.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </section>
+    
   </main>
 
   <footer>
@@ -50,7 +63,7 @@
       <ul>
         <li><span class="active">Home</span></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
@@ -63,18 +76,38 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
 
+  <!-- Script for smooth fade-in animation -->
   <script>
-    // Smooth fade-in animation for sections
     window.addEventListener('load', () => {
       document.querySelectorAll('section').forEach(section => {
         section.classList.add('visible');
       });
     });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BayMount Power",
+    "description": "We provide innovative energy solutions to businesses, offering renewable energy consulting, risk management, and energy efficiency solutions.",
+    "url": "https://1eef3649.power-1to.pages.dev/",
+    "sameAs": [
+      "https://www.facebook.com/baymountpower",
+      "https://www.linkedin.com/company/baymountpower"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service"
+    }
+  }
   </script>
 
 </body>

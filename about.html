@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | BayMount Power</title>
-  <meta name="description" content="Learn more about BayMount Power and our team of energy experts. We are committed to providing innovative energy solutions and helping businesses achieve their sustainability goals.">
-  <meta name="keywords" content="About BayMount Power, Energy Solutions, Sustainability, Energy Experts">
+  <meta name="description" content="Learn more about BayMount Power, a leading provider of sustainable and innovative energy solutions. Our mission is to help businesses thrive with renewable energy.">
+  <meta name="keywords" content="About BayMount Power, Energy Consulting, Renewable Solutions, Risk Management, Sustainability">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,19 +25,35 @@
   </header>
 
   <main id="main-content">
+
+    <!-- Mission Section -->
     <section>
       <h2>Our Mission</h2>
-      <p>At <strong>BayMount Power</strong>, we are committed to providing businesses with innovative energy solutions that promote sustainability and efficiency. With over 20 years of experience, our team of energy experts offers tailored strategies to help companies thrive in the dynamic energy landscape.</p>
+      <p>At <strong>BayMount Power</strong>, our mission is to empower businesses to embrace sustainable energy practices while enhancing operational efficiency. With over two decades of industry experience, we deliver customized energy solutions designed to meet the specific needs of our clients, helping them transition to renewable energy sources and reduce costs.</p>
     </section>
 
+    <!-- Expertise Section -->
     <section>
-      <h2>Who We Are</h2>
-      <p>We are a team of dedicated professionals with expertise in energy consulting, renewable energy, and risk management. Our goal is to deliver data-driven insights and actionable strategies that empower businesses to make informed decisions and achieve their energy goals.</p>
+      <h3>Our Expertise</h3>
+      <ul>
+        <li><strong>Energy Consulting:</strong> Tailored strategies to improve energy efficiency and sustainability for businesses.</li>
+        <li><strong>Risk Management:</strong> Comprehensive risk assessments and mitigation plans for energy-related risks.</li>
+        <li><strong>Renewable Energy Solutions:</strong> Implementing customized renewable energy solutions to align with your sustainability goals.</li>
+      </ul>
     </section>
 
+    <!-- Values Section -->
+    <section>
+      <h3>Our Core Values</h3>
+      <p>At BayMount Power, we are committed to integrity, innovation, and sustainability. These values guide every project we undertake and ensure that we provide top-tier energy solutions that align with your business goals and environmental responsibilities.</p>
+    </section>
+
+    <!-- Call to Action (CTA) Section -->
     <div class="cta">
-      <a href="contact.html" class="btn">Get in Touch with Us</a>
+      <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
     </div>
+
   </main>
 
   <footer>
@@ -46,7 +62,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><span class="active">About Us</span></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
@@ -59,18 +75,38 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
 
+  <!-- Script for smooth fade-in animation -->
   <script>
-    // Smooth fade-in animation for sections
     window.addEventListener('load', () => {
       document.querySelectorAll('section').forEach(section => {
         section.classList.add('visible');
       });
     });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BayMount Power",
+    "description": "We provide customized energy solutions including consulting, risk management, and renewable energy solutions.",
+    "url": "https://1eef3649.power-1to.pages.dev/",
+    "sameAs": [
+      "https://www.facebook.com/baymountpower",
+      "https://www.linkedin.com/company/baymountpower"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service"
+    }
+  }
   </script>
 
 </body>

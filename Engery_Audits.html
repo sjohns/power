@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energy Audits | BayMount Power</title>
-  <meta name="description" content="BayMount Power provides comprehensive energy audits to help businesses identify inefficiencies, optimize energy usage, and reduce costs.">
-  <meta name="keywords" content="BayMount Power, Energy Audits, Energy Efficiency, Cost Reduction, Sustainability">
+  <meta name="description" content="BayMount Power offers comprehensive energy audits to help businesses identify inefficiencies, reduce costs, and improve energy performance.">
+  <meta name="keywords" content="Energy Audits, Energy Efficiency, Energy Consulting, BayMount Power, Cost Reduction">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,36 +15,56 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Audits</span></li>
       </ul>
     </nav>
     <h1>Energy Audits</h1>
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <p><strong>BayMount Power</strong> offers comprehensive energy audits that help businesses identify inefficiencies and opportunities to optimize energy use. Our audits provide actionable insights to reduce energy consumption and costs.</p>
+      <h2>Identify and Eliminate Energy Inefficiencies</h2>
+      <p>At <strong>BayMount Power</strong>, we offer comprehensive energy audits designed to help businesses understand how they consume energy, where inefficiencies exist, and how they can reduce energy costs. Our energy audits are the first step toward a more efficient, sustainable, and cost-effective energy strategy.</p>
     </section>
 
+    <!-- What Is an Energy Audit Section -->
     <section>
-      <h2>Our Energy Audit Process Includes:</h2>
+      <h3>What Is an Energy Audit?</h3>
+      <p>An energy audit is a detailed analysis of your company's energy consumption. It identifies areas where energy is being wasted and offers actionable recommendations to improve efficiency and reduce costs. BayMount Power’s energy audit services help businesses make informed decisions about energy management.</p>
+    </section>
+
+    <!-- Energy Audit Process Section -->
+    <section>
+      <h3>Our Energy Audit Process</h3>
       <ul>
-        <li>Detailed assessment of energy usage patterns.</li>
-        <li>Identification of energy-saving opportunities.</li>
-        <li>Recommendations for improving efficiency and reducing costs.</li>
+        <li><strong>Comprehensive Energy Assessment:</strong> We analyze your facility's energy use, including heating, cooling, lighting, and equipment performance, to identify inefficiencies.</li>
+        <li><strong>Energy Usage Data Analysis:</strong> We evaluate your energy consumption data over time to identify patterns and pinpoint areas for improvement.</li>
+        <li><strong>Actionable Recommendations:</strong> Based on the audit, we provide detailed recommendations to optimize energy use and lower costs, from equipment upgrades to operational changes.</li>
+        <li><strong>Implementation Support:</strong> BayMount Power offers support in implementing the recommended solutions, ensuring your business maximizes its energy-saving potential.</li>
       </ul>
-
-      <h3>Why Perform an Energy Audit?</h3>
-      <p>Energy audits provide the foundation for significant cost savings and environmental benefits. BayMount Power's energy audits are designed to help you reduce consumption, improve efficiency, and achieve long-term sustainability goals.</p>
-
-      <div class="cta">
-        <a href="contact.html" class="btn">Schedule an Energy Audit</a>
-      </div>
     </section>
+
+    <!-- Benefits of Energy Audits Section -->
+    <section>
+      <h3>Why Conduct an Energy Audit?</h3>
+      <ul>
+        <li><strong>Cost Savings:</strong> Identify and eliminate energy waste, leading to significant reductions in your utility bills.</li>
+        <li><strong>Increased Efficiency:</strong> Optimizing energy use improves overall operational performance and productivity.</li>
+        <li><strong>Environmental Responsibility:</strong> Reducing energy consumption helps lower your company’s carbon footprint, contributing to sustainability goals.</li>
+        <li><strong>Regulatory Compliance:</strong> Ensure compliance with energy efficiency regulations and take advantage of potential incentives.</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="contact.html" class="btn btn-primary">Schedule a Free Energy Audit Consultation</a>
+    </div>
+
   </main>
 
   <footer>
@@ -53,11 +73,10 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Audits</span></li>
       </ul>
     </div>
     <div class="footer-column">
@@ -67,18 +86,42 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
 
+  <!-- Script for smooth fade-in animation -->
   <script>
-    // Smooth fade-in animation for sections
     window.addEventListener('load', () => {
       document.querySelectorAll('section').forEach(section => {
         section.classList.add('visible');
       });
     });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Energy Audits",
+    "provider": {
+      "@type": "Organization",
+      "name": "BayMount Power",
+      "url": "https://1eef3649.power-1to.pages.dev/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
   </script>
 
 </body>

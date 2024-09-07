@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sustainability Consulting | BayMount Power</title>
-  <meta name="description" content="BayMount Power provides sustainability consulting services to help energy companies reduce their environmental footprint and maximize operational efficiency.">
-  <meta name="keywords" content="BayMount Power, Sustainability Consulting, Renewable Energy, Carbon Footprint, Energy Efficiency">
+  <meta name="description" content="BayMount Power offers sustainability consulting services to help businesses implement sustainable energy solutions and reduce their environmental footprint.">
+  <meta name="keywords" content="Sustainability Consulting, Sustainable Energy, BayMount Power, Environmental Impact, Green Energy Solutions">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,36 +15,50 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Sustainability Consulting</span></li>
       </ul>
     </nav>
     <h1>Sustainability Consulting</h1>
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <p><strong>BayMount Power</strong> provides sustainability consulting services that help energy companies reduce their environmental footprint while maximizing operational efficiency. Our approach is designed to drive long-term value through sustainable energy practices.</p>
+      <h2>Drive Sustainability with Expert Consulting</h2>
+      <p><strong>BayMount Power</strong> offers sustainability consulting services to help businesses transition to sustainable energy solutions, reduce their environmental impact, and meet regulatory requirements. Our experts work closely with your team to create tailored sustainability strategies that align with your goals and drive meaningful change.</p>
     </section>
 
+    <!-- Sustainability Consulting Solutions Section -->
     <section>
-      <h2>Our Sustainability Services Include:</h2>
+      <h3>Our Sustainability Consulting Services</h3>
       <ul>
-        <li>Energy efficiency assessments and optimization strategies.</li>
-        <li>Guidance on renewable energy adoption.</li>
-        <li>Carbon footprint analysis and reduction plans.</li>
+        <li><strong>Energy Efficiency Assessments:</strong> We conduct comprehensive assessments of your current energy usage and identify opportunities to improve efficiency and reduce waste.</li>
+        <li><strong>Renewable Energy Integration:</strong> We help you integrate renewable energy sources, such as solar, wind, and bioenergy, into your energy mix, reducing reliance on fossil fuels.</li>
+        <li><strong>Carbon Footprint Reduction:</strong> BayMount Power develops strategies to minimize your business’s carbon footprint, helping you meet sustainability targets and reduce environmental impact.</li>
+        <li><strong>Regulatory Compliance & Reporting:</strong> We ensure that your sustainability initiatives align with environmental regulations and assist with sustainability reporting and certification.</li>
       </ul>
-
-      <h3>Why Choose Sustainability Consulting?</h3>
-      <p>As the energy industry shifts towards greener practices, sustainability is more important than ever. BayMount Power offers expert advice and actionable strategies to help your business meet sustainability goals while maintaining profitability.</p>
-
-      <div class="cta">
-        <a href="contact.html" class="btn">Get Started on Your Sustainability Plan</a>
-      </div>
     </section>
+
+    <!-- Benefits of Sustainability Consulting Section -->
+    <section>
+      <h3>Why Choose Sustainability Consulting?</h3>
+      <ul>
+        <li><strong>Cost Savings:</strong> Implementing energy-efficient practices can lead to significant cost reductions by optimizing energy use and minimizing waste.</li>
+        <li><strong>Environmental Stewardship:</strong> Transitioning to sustainable energy solutions demonstrates your commitment to environmental responsibility and corporate sustainability.</li>
+        <li><strong>Compliance & Certifications:</strong> Stay compliant with environmental regulations and earn certifications that enhance your business’s reputation and attract eco-conscious clients.</li>
+        <li><strong>Long-Term Impact:</strong> Our sustainability strategies are designed for long-term success, helping you achieve both environmental and financial sustainability.</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="contact.html" class="btn btn-primary">Get a Free Sustainability Consultation</a>
+    </div>
+
   </main>
 
   <footer>
@@ -53,11 +67,10 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Sustainability Consulting</span></li>
       </ul>
     </div>
     <div class="footer-column">
@@ -67,5 +80,43 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedi
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth fade-in animation for sections
+    window.addEventListener('load', () => {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('visible');
+      });
+    });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Sustainability Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "BayMount Power",
+      "url": "https://1eef3649.power-1to.pages.dev/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
+  </script>
+
+</body>
+</html>

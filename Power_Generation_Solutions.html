@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Power Generation Solutions | BayMount Power</title>
+  <meta name="description" content="BayMount Power provides comprehensive power generation solutions, helping businesses harness renewable energy sources and reduce operational costs.">
+  <meta name="keywords" content="Power Generation, Renewable Energy, Energy Solutions, BayMount Power, Sustainable Power">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +13,9 @@
   <header>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
@@ -22,33 +25,49 @@
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <p><strong>BayMount Power</strong> provides tailored power generation solutions to meet the unique energy demands of businesses. From traditional power plants to renewable energy sources, we help you optimize generation capacity, reduce operational costs, and ensure reliable energy supply.</p>
+      <h2>Unlock the Potential of Renewable Power</h2>
+      <p>At <strong>BayMount Power</strong>, we provide tailored power generation solutions that enable businesses to harness renewable energy sources. Our solutions are designed to reduce reliance on traditional energy systems, cut operational costs, and promote long-term sustainability.</p>
     </section>
 
+    <!-- Power Generation Solutions Section -->
     <section>
-      <h2>Our Power Generation Services Include:</h2>
+      <h3>Our Power Generation Solutions</h3>
       <ul>
-        <li>Design and implementation of power generation systems.</li>
-        <li>Integration of renewable energy into power generation.</li>
-        <li>Ongoing maintenance and performance optimization.</li>
+        <li><strong>Solar Power:</strong> Leverage the sun’s energy through efficient solar power systems designed for maximum output and cost-effectiveness.</li>
+        <li><strong>Wind Power:</strong> Harness wind energy with advanced turbine systems tailored to your business’s energy needs.</li>
+        <li><strong>Bioenergy:</strong> Generate energy from organic materials, reducing waste and creating a sustainable power source.</li>
+        <li><strong>Hybrid Solutions:</strong> Combine multiple renewable energy sources, such as solar and wind, for a more resilient and efficient power system.</li>
       </ul>
-
-      <h3>Why Choose BayMount Power?</h3>
-      <p>With expertise in both conventional and renewable power generation, BayMount Power helps your business navigate the complexities of energy production, ensuring that your power generation systems are efficient, scalable, and sustainable.</p>
-
-      <div class="cta">
-        <a href="contact.html" class="btn">Explore Power Generation Solutions</a>
-      </div>
     </section>
+
+    <!-- Benefits of Power Generation Section -->
+    <section>
+      <h3>Why Choose BayMount Power?</h3>
+      <ul>
+        <li><strong>Cost Savings:</strong> Reduce operational costs by generating your own power and minimizing dependence on the grid.</li>
+        <li><strong>Energy Independence:</strong> Gain greater control over your energy supply by generating power on-site, reducing exposure to market fluctuations.</li>
+        <li><strong>Sustainability:</strong> Transition to renewable energy sources, significantly reducing your company’s carbon footprint and environmental impact.</li>
+        <li><strong>Custom Solutions:</strong> Our team designs power generation systems tailored to meet your business's unique energy needs and goals.</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="contact.html" class="btn btn-primary">Get a Free Power Generation Consultation</a>
+    </div>
+
   </main>
 
   <footer>
     <div class="footer-column">
       <h3>Quick Links</h3>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
@@ -61,10 +80,43 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
+
+  <script>
+    // Smooth fade-in animation for sections
+    window.addEventListener('load', () => {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('visible');
+      });
+    });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Power Generation Solutions",
+    "provider": {
+      "@type": "Organization",
+      "name": "BayMount Power",
+      "url": "https://1eef3649.power-1to.pages.dev/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
+  </script>
 
 </body>
 </html>

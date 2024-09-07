@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | BayMount Power</title>
-  <meta name="description" content="BayMount Power is committed to protecting your personal information. Read our Privacy Policy to learn how we collect, use, and safeguard your data.">
-  <meta name="keywords" content="BayMount Power, Privacy Policy, Data Security, Personal Information, Data Collection">
+  <meta name="description" content="BayMount Power's Privacy Policy outlines how we collect, use, and safeguard personal information from our customers.">
+  <meta name="keywords" content="Privacy Policy, BayMount Power, Data Privacy, Data Collection, Data Security">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><span class="active">Privacy Policy</span></li>
+        <li><a href="Privacy_Policy.html"><span class="active">Privacy Policy</span></a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
       </ul>
     </nav>
@@ -25,30 +25,93 @@
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <h2>Introduction</h2>
-      <p>At <strong>BayMount Power</strong>, we respect your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you interact with our website and services.</p>
+      <h2>Your Privacy Matters to Us</h2>
+      <p>At <strong>BayMount Power</strong>, we are committed to safeguarding the privacy and security of our customers' personal data. This Privacy Policy outlines how we collect, use, and protect your information when you engage with our services or visit our website.</p>
     </section>
 
+    <!-- Information Collection Section -->
     <section>
-      <h2>Information We Collect</h2>
-      <p>We may collect personal information such as your name, email address, phone number, and company name when you submit forms on our website or contact us for inquiries.</p>
+      <h3>What Information Do We Collect?</h3>
+      <p>We collect personal information that you provide directly to us when you use our website or services, such as your name, email address, phone number, and any additional details relevant to our service offerings.</p>
     </section>
 
+    <!-- Usage of Information Section -->
     <section>
-      <h2>How We Use Your Information</h2>
+      <h3>How Do We Use Your Information?</h3>
       <ul>
-        <li>To respond to your inquiries and provide services.</li>
-        <li>To improve our website and services based on user feedback.</li>
-        <li>To communicate important updates, offers, or changes to our services.</li>
+        <li>To provide you with the services and support you request from BayMount Power.</li>
+        <li>To communicate important updates or changes to our services.</li>
+        <li>To improve our website and services based on customer feedback.</li>
+        <li>To comply with legal obligations and safeguard our rights.</li>
       </ul>
     </section>
 
+    <!-- Information Security Section -->
     <section>
-      <h2>Data Security</h2>
-      <p>We implement reasonable security measures to protect your personal information. However, no data transmission over the internet can be guaranteed as 100% secure. By using our website, you acknowledge this risk.</p>
+      <h3>How Do We Protect Your Data?</h3>
+      <p>We implement industry-standard security measures to ensure the protection of your personal data from unauthorized access, disclosure, or misuse. These measures include encryption, secure servers, and limited access to authorized personnel only.</p>
     </section>
 
+    <!-- Contact Section -->
     <section>
-      <h2>Your Rights</h2>
-      <p>You have the right to access, modify, or delete
+      <h3>Have Questions About Our Privacy Policy?</h3>
+      <p>If you have any questions or concerns regarding our Privacy Policy, feel free to <a href="contact.html">contact us</a> at any time. We are committed to maintaining transparency and addressing any issues you may have.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><span class="active">Privacy Policy</span></li>
+        <li><a href="Terms_of_Service.html">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>123 Energy Way<br>City, State, ZIP</p>
+      <p>Email: <a href="mailto:info@baymountpower.com">info@baymountpower.com</a></p>
+    </div>
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+    </div>
+  </footer>
+
+  <!-- Script for smooth fade-in animation -->
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('visible');
+      });
+    });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BayMount Power",
+    "description": "Privacy Policy for BayMount Power. We collect and protect personal data for service improvement and customer communication.",
+    "url": "https://1eef3649.power-1to.pages.dev/",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
+  </script>
+
+</body>
+</html>

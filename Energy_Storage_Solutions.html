@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energy Storage Solutions | BayMount Power</title>
-  <meta name="description" content="BayMount Power offers advanced energy storage solutions to help businesses optimize energy usage, reduce costs, and improve operational efficiency.">
-  <meta name="keywords" content="BayMount Power, Energy Storage Solutions, Battery Storage, Energy Optimization, Sustainability">
+  <meta name="description" content="BayMount Power provides energy storage solutions that allow businesses to store excess energy for later use, improving efficiency and reducing costs.">
+  <meta name="keywords" content="Energy Storage, Renewable Energy, Energy Solutions, BayMount Power, Energy Efficiency">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,36 +15,49 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Storage Solutions</span></li>
       </ul>
     </nav>
     <h1>Energy Storage Solutions</h1>
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <p><strong>BayMount Power</strong> offers cutting-edge energy storage solutions to help businesses optimize energy use and increase efficiency. Our storage solutions provide the flexibility to manage energy loads, store excess energy, and reduce operational costs.</p>
+      <h2>Maximize Energy Efficiency with Storage Solutions</h2>
+      <p><strong>BayMount Power</strong> provides advanced energy storage solutions that help businesses store excess energy for later use, reducing reliance on the grid and lowering operational costs. Whether you're generating energy from renewable sources or optimizing traditional power systems, our solutions ensure that energy is available when it's needed most.</p>
     </section>
 
+    <!-- How Energy Storage Works Section -->
     <section>
-      <h2>Our Energy Storage Services Include:</h2>
+      <h3>How Energy Storage Works</h3>
       <ul>
-        <li>Battery storage solutions for peak demand management.</li>
-        <li>Custom energy storage strategies tailored to your business needs.</li>
-        <li>Integration of renewable energy sources with storage systems.</li>
+        <li><strong>Store Excess Energy:</strong> Energy storage systems capture excess energy generated during off-peak times, allowing you to use it later when demand is higher.</li>
+        <li><strong>Reduce Grid Dependence:</strong> By storing energy, businesses can reduce their reliance on the electrical grid and protect against power outages or price spikes.</li>
+        <li><strong>Improve Sustainability:</strong> Energy storage systems complement renewable energy generation, allowing businesses to maximize the use of solar, wind, or other green energy sources.</li>
       </ul>
-
-      <h3>Why Energy Storage?</h3>
-      <p>Energy storage systems are critical to achieving energy efficiency and sustainability goals. By storing energy during low-demand periods, businesses can reduce costs and improve energy resilience. BayMount Power helps you implement the right energy storage solution to meet your needs.</p>
-
-      <div class="cta">
-        <a href="contact.html" class="btn">Learn More About Storage Solutions</a>
-      </div>
     </section>
+
+    <!-- Benefits of Energy Storage Solutions Section -->
+    <section>
+      <h3>Why Choose BayMount Power for Energy Storage?</h3>
+      <ul>
+        <li><strong>Cost Savings:</strong> Storing energy reduces peak energy costs and provides long-term savings.</li>
+        <li><strong>Energy Resilience:</strong> Our solutions enhance energy security, ensuring your business has access to power even during outages.</li>
+        <li><strong>Environmental Impact:</strong> Optimize the use of renewable energy and reduce your carbon footprint with efficient energy storage systems.</li>
+        <li><strong>Custom Solutions:</strong> We tailor energy storage systems to meet the unique needs of your business, ensuring the most effective solution for your operations.</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="contact.html" class="btn btn-primary">Get a Free Energy Storage Consultation</a>
+    </div>
+
   </main>
 
   <footer>
@@ -53,11 +66,10 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Storage Solutions</span></li>
       </ul>
     </div>
     <div class="footer-column">
@@ -67,18 +79,42 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
 
+  <!-- Script for smooth fade-in animation -->
   <script>
-    // Smooth fade-in animation for sections
     window.addEventListener('load', () => {
       document.querySelectorAll('section').forEach(section => {
         section.classList.add('visible');
       });
     });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Energy Storage Solutions",
+    "provider": {
+      "@type": "Organization",
+      "name": "BayMount Power",
+      "url": "https://1eef3649.power-1to.pages.dev/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
   </script>
 
 </body>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energy Consulting Services | BayMount Power</title>
-  <meta name="description" content="BayMount Power provides expert energy consulting services to help businesses optimize energy use, reduce costs, and improve sustainability.">
-  <meta name="keywords" content="BayMount Power, Energy Consulting, Energy Efficiency, Sustainability, Energy Audits">
+  <meta name="description" content="BayMount Power offers tailored energy consulting services to help businesses improve efficiency, reduce costs, and embrace sustainable energy solutions.">
+  <meta name="keywords" content="Energy Consulting, Renewable Energy, Energy Efficiency, BayMount Power">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,36 +15,50 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Consulting</span></li>
       </ul>
     </nav>
     <h1>Energy Consulting Services</h1>
   </header>
 
   <main id="main-content">
+
+    <!-- Introduction Section -->
     <section>
-      <p>At <strong>BayMount Power</strong>, our energy consulting services help businesses optimize their energy consumption, improve efficiency, and reduce costs. Our consultants work with your team to identify energy-saving opportunities and implement sustainable solutions tailored to your needs.</p>
+      <h2>Tailored Energy Consulting Solutions</h2>
+      <p>At <strong>BayMount Power</strong>, we provide customized energy consulting services to help businesses of all sizes improve efficiency, reduce costs, and embrace sustainable energy solutions. Our experts will guide you through every step of the process, ensuring that your energy strategy is aligned with your long-term goals.</p>
     </section>
 
+    <!-- Our Approach Section -->
     <section>
-      <h2>Our Energy Consulting Services Include:</h2>
+      <h3>Our Approach to Energy Consulting</h3>
       <ul>
-        <li>Energy audits to identify areas for improvement.</li>
-        <li>Custom energy management plans.</li>
-        <li>Compliance with regulatory standards and environmental policies.</li>
+        <li><strong>Energy Audits:</strong> We conduct thorough energy audits to assess your current energy usage and identify opportunities for improvement.</li>
+        <li><strong>Customized Solutions:</strong> Based on your energy audit, we create a personalized plan that focuses on enhancing efficiency, reducing waste, and incorporating renewable energy where possible.</li>
+        <li><strong>Implementation Support:</strong> Our team assists with the implementation of new technologies and strategies, ensuring a seamless transition to a more energy-efficient model.</li>
+        <li><strong>Ongoing Monitoring:</strong> We provide ongoing monitoring and support to ensure that your energy strategy continues to deliver results over time.</li>
       </ul>
-
-      <h3>Why Choose BayMount Power?</h3>
-      <p>With extensive experience in the energy sector, BayMount Power helps companies not only save money but also reduce their environmental footprint. Our data-driven approach ensures that your business remains compliant with industry standards while benefiting from sustainable energy practices.</p>
-
-      <div class="cta">
-        <a href="contact.html" class="btn">Get a Consultation Today</a>
-      </div>
     </section>
+
+    <!-- Benefits of Energy Consulting Section -->
+    <section>
+      <h3>Why Choose BayMount Power?</h3>
+      <ul>
+        <li><strong>Cost Savings:</strong> Our energy consulting services help you reduce operational costs through more efficient energy use.</li>
+        <li><strong>Enhanced Sustainability:</strong> By integrating renewable energy solutions, we help your business reduce its environmental impact.</li>
+        <li><strong>Regulatory Compliance:</strong> Stay ahead of evolving regulations and ensure that your energy practices meet current and future compliance requirements.</li>
+        <li><strong>Expert Guidance:</strong> Our team has years of experience in the energy sector, providing you with the expertise needed to make informed decisions.</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="contact.html" class="btn btn-primary">Get a Free Energy Audit Consultation</a>
+    </div>
+
   </main>
 
   <footer>
@@ -53,11 +67,10 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
+        <li><a href="services.html"><span class="active">Services</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
         <li><a href="Terms_of_Service.html">Terms of Service</a></li>
-        <li><span class="active">Energy Consulting</span></li>
       </ul>
     </div>
     <div class="footer-column">
@@ -67,18 +80,42 @@
     </div>
     <div class="footer-column">
       <h3>Follow Us</h3>
-      <a href="#"><img src="facebook-icon.png" alt="Follow us on Facebook"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="Follow us on LinkedIn"></a>
+      <a href="#"><img src="icons/facebook-icon.png" alt="Follow us on Facebook"></a>
+      <a href="#"><img src="icons/linkedin-icon.png" alt="Follow us on LinkedIn"></a>
     </div>
   </footer>
 
+  <!-- Script for smooth fade-in animation -->
   <script>
-    // Smooth fade-in animation for sections
     window.addEventListener('load', () => {
       document.querySelectorAll('section').forEach(section => {
         section.classList.add('visible');
       });
     });
+  </script>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Energy Consulting Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "BayMount Power",
+      "url": "https://1eef3649.power-1to.pages.dev/"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-123-ENERGY",
+      "contactType": "Customer Service",
+      "email": "info@baymountpower.com"
+    }
+  }
   </script>
 
 </body>
