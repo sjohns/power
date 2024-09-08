@@ -133,3 +133,13 @@ section {
 #bottom-nav-container .footer-column a:hover {
   text-decoration: underline;
 }
+
+/* Fade-in Animation */
+section.visible {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+section {
+  opacity: 0;
+}
