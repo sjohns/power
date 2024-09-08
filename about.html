@@ -4,88 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | BayMount Power</title>
-  <meta name="description" content="Learn more about BayMount Power, a leading provider of sustainable and innovative energy solutions. Our mission is to help businesses thrive with renewable energy.">
-  <meta name="keywords" content="About BayMount Power, Energy Consulting, Renewable Solutions, Risk Management, Sustainability">
+  <meta name="description" content="Learn more about BayMount Power, a leading provider of sustainable and innovative energy solutions.">
+  <meta name="keywords" content="Energy Consulting, Renewable Solutions, Sustainability">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Container for header -->
-<div id="header-container"></div>
+  <!-- Container for header -->
+  <div id="header-container"></div>
 
   <main id="main-content">
     <h1>About BayMount Power</h1>
+
     <!-- Mission Section -->
-    <section>
+    <section class="fade-in">
       <h2>Our Mission</h2>
-      <p>At <strong>BayMount Power</strong>, our mission is to empower businesses to embrace sustainable energy practices while enhancing operational efficiency. With over two decades of industry experience, we deliver customized energy solutions designed to meet the specific needs of our clients, helping them transition to renewable energy sources and reduce costs.</p>
+      <p>At <strong>BayMount Power</strong>, our mission is to empower businesses to embrace sustainable energy practices. We deliver customized energy solutions designed to meet the specific needs of our clients, helping them transition to renewable energy sources and reduce costs.</p>
     </section>
 
     <!-- Expertise Section -->
-    <section>
+    <section class="fade-in">
       <h3>Our Expertise</h3>
       <ul>
-        <li><strong>Energy Consulting:</strong> Tailored strategies to improve energy efficiency and sustainability for businesses.</li>
-        <li><strong>Risk Management:</strong> Comprehensive risk assessments and mitigation plans for energy-related risks.</li>
-        <li><strong>Renewable Energy Solutions:</strong> Implementing customized renewable energy solutions to align with your sustainability goals.</li>
+        <li><strong>Energy Consulting:</strong> Tailored strategies to improve energy efficiency.</li>
+        <li><strong>Risk Management:</strong> Comprehensive risk assessments and mitigation plans.</li>
+        <li><strong>Renewable Energy Solutions:</strong> Customized renewable energy strategies.</li>
       </ul>
     </section>
 
     <!-- Values Section -->
-    <section>
+    <section class="fade-in">
       <h3>Our Core Values</h3>
-      <p>At BayMount Power, we are committed to integrity, innovation, and sustainability. These values guide every project we undertake and ensure that we provide top-tier energy solutions that align with your business goals and environmental responsibilities.</p>
+      <p>We are committed to integrity, innovation, and sustainability. These values guide every project we undertake to provide top-tier energy solutions.</p>
     </section>
 
     <!-- Call to Action (CTA) Section -->
     <div class="cta">
-      <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+      <a href="services.html" class="btn">Explore Our Services</a>
       <a href="contact.html" class="btn btn-secondary">Contact Us</a>
     </div>
-
   </main>
 
-<!-- Container for footer -->
-<div id="bottom-nav-container"></div>
-
-
-<script>
-// Load the header and footer, then set the active link
-Promise.all([
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-        }),
-    fetch("bottom-nav.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("bottom-nav-container").innerHTML = data;
-        })
-]).then(() => {
-    // Once both header and footer are loaded, call setActiveLink
-    setActiveLink();
-});
-
-// Function to add 'active' class to the current page's link
-function setActiveLink() {
-    const currentPath = window.location.pathname.split("/").pop(); // Get the last part of the path
- //   console.log("Current path:", currentPath); // Log the current path
-
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href').split("/").pop(); // Get the last part of the href
-  //      console.log("Checking link:", linkHref); // Log each link's href
-
-        // Match the link with the current path, allowing for flexibility in file structure
-        if (linkHref === currentPath || (currentPath === "" && linkHref === "index.html")) {
-            link.classList.add('active');
-   //         console.log("Active link found:", linkHref); // Confirm active class is added
-        }
-    });
-}
-
-</script>
-
+  <!-- Footer container -->
+  <footer></footer>
 
   <!-- Schema Markup for SEO -->
   <script type="application/ld+json">
@@ -107,5 +67,24 @@ function setActiveLink() {
   }
   </script>
 
+  <script>
+    Promise.all([
+      fetch("header.html").then(response => response.text()).then(data => document.querySelector('header').innerHTML = data),
+      fetch("bottom-nav.html").then(response => response.text()).then(data => document.querySelector('footer').innerHTML = data)
+    ]).then(() => {
+      setActiveLink();
+    });
+
+    function setActiveLink() {
+      const currentPath = window.location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll('nav ul li a');
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href').split("/").pop();
+        if (linkHref === currentPath || (currentPath === "" && linkHref === "index.html")) {
+          link.classList.add('active');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
