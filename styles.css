@@ -76,50 +76,41 @@ nav ul li a.active {
 
 /* Bottom Navigation Container */
 #bottom-nav-container {
-  background-color: #333; /* Dark background color */
-  color: white; /* Text color */
-  padding: 20px;
+  background: #333; /* Dark background */
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  display: block;
 }
 
-/* Styling for the bottom-nav class within #bottom-nav-container */
+/* Flexbox layout for footer navigation */
 #bottom-nav-container .bottom-nav nav {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-around; /* Space the columns evenly */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 /* Footer columns */
 #bottom-nav-container .footer-column {
   margin-bottom: 20px;
-  display: inline-block; /* Make columns inline so they appear side by side */
-  width: 30%; /* Take 30% width per column */
-  vertical-align: top; /* Align columns at the top */
-  color: white; /* Ensure text is white */
+  flex-basis: 30%; /* Each column takes up about 30% of the width */
+  min-width: 250px; /* Prevent columns from getting too narrow */
+  text-align: left; /* Align text to the left inside the columns */
 }
 
 #bottom-nav-container .footer-column h3 {
   margin-bottom: 10px;
-  color: white;
 }
 
 #bottom-nav-container .footer-column ul {
-  list-style-type: none; /* Remove bullet points */
+  list-style-type: none;
   padding: 0;
 }
 
 #bottom-nav-container .footer-column a {
-  color: white; /* Ensure links are white */
-  text-decoration: none; /* Remove underline */
+  color: white;
+  text-decoration: none;
 }
 
 #bottom-nav-container .footer-column a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
-
-#bottom-nav-container .footer-column img {
-  width: 32px;
-  height: 32px;
-  margin-right: 10px; /* Add space between icons */
+  text-decoration: underline;
 }
