@@ -7,6 +7,7 @@
   <meta name="description" content="BayMount Power offers tailored energy consulting services to help businesses improve efficiency, reduce costs, and embrace sustainable energy solutions.">
   <meta name="keywords" content="Energy Consulting, Renewable Energy, Energy Efficiency, BayMount Power">
   <link rel="stylesheet" href="styles.css">
+      <script src="script.js" defer></script> <!-- Defer ensures that the DOM loads before JS execution -->
 </head>
 <body>
 <!-- Container for header -->
@@ -54,36 +55,6 @@
 
 <!-- Container for footer -->
 <div id="bottom-nav-container"></div>
-
-<script>
-    // Load the header
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-            setActiveLink();
-        });
-
-    // Load the footer
-    fetch("bottom-nav.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("bottom-nav-container").innerHTML = data;
-            setActiveLink();
-        });
-
-    // Function to add 'active' class to the current page's link
-    function setActiveLink() {
-        const currentPath = window.location.pathname;
-        const navLinks = document.querySelectorAll('a[href]');
-
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('active');
-            }
-        });
-    }
-</script>
 
 
   <!-- Schema Markup for SEO -->
