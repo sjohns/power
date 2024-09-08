@@ -85,18 +85,21 @@
     });
 
     // Function to add 'active' class to the current page's link
-    function setActiveLink() {
-      const currentPath = window.location.pathname.split("/").pop();
-      const navLinks = document.querySelectorAll('nav ul li a');
-      console.log('Current Path:', currentPath);  // Debugging
-      navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href').split("/").pop();
-        if (linkHref === currentPath || (currentPath === "" && linkHref === "index.html")) {
-          link.classList.add('active');
-          console.log('Active link:', linkHref);  // Debugging
-        }
-      });
+function setActiveLink() {
+  const currentPath = window.location.pathname.split("/").pop(); // Get current page name
+  const navLinks = document.querySelectorAll('nav ul li a');
+
+  navLinks.forEach(link => {
+    const linkHref = link.getAttribute('href').split("/").pop(); // Get link's href file name
+    // Remove active class from all links
+    link.classList.remove('active');
+    // Add active class only to the matching link
+    if (linkHref === currentPath || (currentPath === "" && linkHref === "index.html")) {
+      link.classList.add('active');
     }
+  });
+}
+
   </script>
 </body>
 </html>
