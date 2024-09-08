@@ -52,23 +52,24 @@
 
 
 <script>
-    // Load the header
+// Load the header and footer, then set the active link
+Promise.all([
     fetch("header.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-container").innerHTML = data;
-            setActiveLink();
-        });
-
-    // Load the footer
+        }),
     fetch("bottom-nav.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("bottom-nav-container").innerHTML = data;
-            setActiveLink();
-        });
+        })
+]).then(() => {
+    // Once both header and footer are loaded, call setActiveLink
+    setActiveLink();
+});
 
-    // Function to add 'active' class to the current page's link
+// Function to add 'active' class to the current page's link
 function setActiveLink() {
     const currentPath = window.location.pathname.split("/").pop(); // Get the last part of the path
     console.log("Current path:", currentPath); // Log the current path
@@ -86,9 +87,8 @@ function setActiveLink() {
     });
 }
 
-
-
 </script>
+
 
   <!-- Schema Markup for SEO -->
   <script type="application/ld+json">
