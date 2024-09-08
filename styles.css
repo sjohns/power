@@ -74,3 +74,10 @@ nav ul li a.active {
   margin: 40px 0;
 }
 
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark background color */
+  color: white; /* Text color */
+  padding: 20px; /* Added padding for spacing */
+  text-align: center; /* Center the text */
+}
