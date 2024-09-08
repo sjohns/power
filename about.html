@@ -68,16 +68,17 @@
         });
 
     // Function to add 'active' class to the current page's link
-    function setActiveLink() {
-        const currentPath = window.location.pathname;
-        const navLinks = document.querySelectorAll('a[href]');
+function setActiveLink() {
+    const currentPath = window.location.pathname.split("/").pop(); // Get the last part of the path
+    const navLinks = document.querySelectorAll('nav ul li a');
 
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('active');
-            }
-        });
-    }
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+}
+
 </script>
 
 
