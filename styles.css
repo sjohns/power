@@ -39,7 +39,8 @@ nav ul li a {
   color: #333;
 }
 
-nav ul li span.active {
+/* Active link styling */
+nav ul li a.active {
   font-weight: bold;
+  color: #00509e; /* Customize this color */
 }
-
