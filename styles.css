@@ -44,3 +44,33 @@ nav ul li a.active {
   font-weight: bold;
   color: #00509e; /* Customize this color */
 }
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #00509e;
+}
+
+.btn-secondary {
+  background-color: #00cc99;
+}
+
+.btn-secondary:hover {
+  background-color: #009e73;
+}
+
+/* CTA Styles */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
