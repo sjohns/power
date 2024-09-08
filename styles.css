@@ -74,10 +74,51 @@ nav ul li a.active {
   margin: 40px 0;
 }
 
-/* Footer Styles */
-footer {
+/* Bottom Navigation Styles */
+.bottom-nav {
   background-color: #333; /* Dark background color */
   color: white; /* Text color */
-  padding: 20px; /* Added padding for spacing */
-  text-align: center; /* Center the text */
+  padding: 20px;
+  text-align: center;
+  display: block; /* Ensure it displays as block */
 }
+
+.bottom-nav nav {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-column {
+  margin-bottom: 20px;
+  display: inline-block; /* Make columns inline so they appear side by side */
+  width: 30%; /* Take 30% width per column */
+  vertical-align: top; /* Align columns at the top */
+  color: white; /* Ensure text is white */
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-column ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.footer-column a {
+  color: white; /* Ensure links are white */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-column a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-column img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px; /* Add space between icons */
+}
+
