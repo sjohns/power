@@ -47,6 +47,13 @@ nav ul li a:hover {
   border-bottom: 2px solid var(--primary-color);
 }
 
+/* Active link styling */
+nav ul li a.active {
+  font-weight: bold;
+  color: var(--primary-color); /* Highlight active link */
+  border-bottom: 2px solid var(--primary-color); /* Optional: underline active link */
+}
+
 /* Main Content Styles */
 main {
   padding: 20px;
