@@ -45,6 +45,25 @@ nav ul li a.active {
   color: #00509e; /* Customize this color */
 }
 
+/* Main Content Styles */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Icon Styles */
+.icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 /* Button Styles */
 .btn {
   display: inline-block;
