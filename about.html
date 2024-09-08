@@ -71,20 +71,21 @@
     // Function to add 'active' class to the current page's link
 function setActiveLink() {
     const currentPath = window.location.pathname.split("/").pop(); // Get the last part of the path
-    console.log("Current path:", currentPath); // Log the current path to check
+    console.log("Current path:", currentPath); // Log the current path
 
     const navLinks = document.querySelectorAll('nav ul li a');
     navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href').split("/").pop(); // Get the last part of the href attribute
-        console.log("Checking link:", linkHref); // Log each link
+        const linkHref = link.getAttribute('href').split("/").pop(); // Get the last part of the href
+        console.log("Checking link:", linkHref); // Log each link's href
 
-        // Match current path with the href, ignoring leading/trailing slashes
-        if (linkHref === currentPath) {
+        // Match the link with the current path, allowing for flexibility in file structure
+        if (linkHref === currentPath || (currentPath === "" && linkHref === "index.html")) {
             link.classList.add('active');
-            console.log("Active link found:", linkHref); // Log when active class is added
+            console.log("Active link found:", linkHref); // Confirm active class is added
         }
     });
 }
+
 
 
 </script>
