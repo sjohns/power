@@ -50,36 +50,7 @@
 <!-- Container for footer -->
 <div id="bottom-nav-container"></div>
 
-<script>
-    // Load the header
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-            setActiveLink();
-        });
 
-    // Load the footer
-    fetch("bottom-nav.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("bottom-nav-container").innerHTML = data;
-            setActiveLink();
-        });
-
-    // Function to add 'active' class to the current page's link
-function setActiveLink() {
-    const currentPath = window.location.pathname.split("/").pop(); // Get the last part of the path
-    const navLinks = document.querySelectorAll('nav ul li a');
-
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        }
-    });
-}
-
-</script>
 
 
   <!-- Schema Markup for SEO -->
