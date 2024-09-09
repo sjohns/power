@@ -2,11 +2,9 @@
 
 /* Import Google Fonts and Font Awesome */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); /* More stable Font Awesome */
 
-
-
-
+/* Variables */
 :root {
   --primary-color: #00509e;
   --secondary-color: #009e73;
@@ -60,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: var(--hover-bg-color); /* Light hover effect */
+  background-color: var(--hover-bg-color);
   color: var(--primary-color);
 }
 
@@ -68,46 +66,41 @@ nav ul li a:hover {
 nav ul li a.active {
   font-weight: bold;
   color: var(--primary-color);
-  background-color: #e6f0ff; /* Subtle background for active state */
+  background-color: #e6f0ff;
 }
 
 /* Dropdown Menu Styles */
 nav ul li ul {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
   min-width: 200px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for dropdown */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   list-style: none;
   padding: 0;
   border-radius: 5px;
-  border: 1px solid #ddd; /* Subtle border around the dropdown */
-}
-
-nav ul li ul li {
-  display: block; /* Stack dropdown items */
+  border: 1px solid #ddd;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 nav ul li ul li a {
-  padding: 12px 15px; /* More padding for dropdown items */
+  padding: 15px;
   color: var(--text-color);
-  display: block;
   font-size: 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li ul li a:hover {
-  background-color: var(--primary-color); /* Darker background on hover */
-  color: white; /* Light text on hover */
-  border-radius: 0; /* No border radius on hover */
+nav ul li ul li:last-child a {
+  border-bottom: none;
 }
 
-/* Show the dropdown menu on hover */
 nav ul li:hover ul {
   display: block;
+  opacity: 1;
 }
 
 /* Main Content Styles */
@@ -157,21 +150,21 @@ section.visible {
 /* Footer Styles */
 footer {
   background: var(--background-gradient);
-  color: #fff;
+  color: #e0e0e0;
   padding: 20px 0;
   text-align: center;
 }
 
 footer nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 footer .footer-column {
-  flex-basis: 30%;
-  min-width: 250px;
-  margin-bottom: 20px;
+  flex: 1 1 250px;
+  margin: 10px;
 }
 
 footer .footer-column a {
@@ -184,14 +177,18 @@ footer .footer-column a:hover {
   text-decoration: underline;
 }
 
+footer .footer-column a:hover i {
+  color: var(--secondary-color);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  body {
+  main {
     padding: 10px;
   }
 
   nav ul {
-    flex-direction: column; /* Stack menu items vertically */
+    flex-direction: column;
   }
 
   nav ul li {
@@ -200,5 +197,13 @@ footer .footer-column a:hover {
 
   .footer-column {
     flex-basis: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .footer-column {
+      flex-basis: 30%;
+      text-align: left;
+    }
   }
 }
