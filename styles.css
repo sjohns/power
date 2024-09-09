@@ -58,31 +58,36 @@ nav ul li a.active {
 /* Dropdown Menu Styles */
 nav ul li ul {
   display: none; /* Hidden by default */
-  position: absolute; /* Positioned relative to the parent */
+  position: absolute;
   top: 100%; /* Position dropdown below the parent */
   left: 0;
   background-color: #f4f4f4;
   min-width: 200px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
   z-index: 1000;
+  list-style: none; /* Remove bullets */
+  padding: 0;
 }
 
 nav ul li ul li {
-  display: block; /* Vertical stacking */
-}
-
-nav ul li:hover ul {
-  display: block; /* Show dropdown on hover */
+  display: block; /* Stack dropdown items */
+  margin: 0; /* Ensure no spacing between items */
 }
 
 nav ul li ul li a {
   padding: 10px;
+  display: block; /* Ensure entire area is clickable */
   color: #333;
 }
 
 nav ul li ul li a:hover {
   background-color: var(--primary-color);
   color: white;
+}
+
+/* Show the dropdown menu on hover */
+nav ul li:hover ul {
+  display: block;
 }
 
 /* Main Content Styles */
