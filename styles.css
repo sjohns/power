@@ -4,6 +4,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); /* Stable Font Awesome */
 
+/* Variables */
+:root {
+  --primary-color: #00509e;
+  --secondary-color: #009e73;
+  --text-color: #333;
+  --background-dark: #333;
+  --background-gradient: linear-gradient(45deg, #333, var(--primary-color));
+  --hover-bg-color: #f0f0f0; /* Light hover background color */
+}
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--hover-bg-color); /* Light hover effect */
+  color: var(--primary-color);
+}
+
+/* Active link styling */
+nav ul li a.active {
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: #e6f0ff; /* Subtle background for active state */
+}
+
+/* Dropdown Menu Styles */
+nav ul li ul {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for dropdown */
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Subtle border around the dropdown */
+}
+
+nav ul li ul li {
+  display: block; /* Stack dropdown items */
+}
+
+nav ul li ul li a {
+  padding: 12px 15px; /* More padding for dropdown items */
+  color: var(--text-color);
+  display: block;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li ul li a:hover {
+  background-color: var(--primary-color); /* Darker background on hover */
+  color: white; /* Light text on hover */
+  border-radius: 0; /* No border radius on hover */
+}
+
+/* Show the dropdown menu on hover */
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Styles with Animation */
+section {
+  margin-bottom: 40px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--text-color);
+}
+
 /* Footer Styles */
 footer {
   background: var(--background-gradient);
@@ -11,23 +159,27 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
-/* Ensure the footer columns are evenly spaced and wrap as needed */
+/*
+footer .footer-nav {
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+*/
 footer .footer-nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap; /* Wrap columns on smaller screens */
+  align-items: flex-start;
 }
 
-/* Footer Column Layout */
 footer .footer-column {
-  flex-basis: 20%; /* Each column takes up 20% of the width */
-  min-width: 200px; /* Minimum width to avoid squishing */
   margin-bottom: 20px;
   text-align: left;
 }
 
-/* Vertical list styling for footer links */
+/* Quick Links and Social Links as Vertical Lists */
 footer .footer-column ul {
   list-style: none;
   padding: 0;
@@ -35,10 +187,12 @@ footer .footer-column ul {
 }
 
 footer .footer-column ul li {
+  display: block; /* Ensure each list item is block-level for vertical stacking */
   margin-bottom: 10px;
 }
 
 footer .footer-column ul li a {
+  display: block; /* Force links to take full width */
   color: white;
   text-decoration: none;
 }
@@ -48,16 +202,7 @@ footer .footer-column ul li a:hover {
   text-decoration: underline;
 }
 
-/* Social Media Icon Styling */
-footer .footer-column a i {
-  margin-right: 8px;
-}
-
-footer .footer-column a:hover i {
-  color: var(--secondary-color);
-}
-
-/* Email Styling */
+/* Contact Info Email Styling */
 footer .footer-column a[href^="mailto"] {
   color: var(--secondary-color);
   text-decoration: none;
@@ -67,10 +212,24 @@ footer .footer-column a[href^="mailto"]:hover {
   text-decoration: underline;
 }
 
+/* Social Media Icon Styling */
+footer .footer-column a i {
+  margin-right: 8px;
+}
 
+footer .footer-column a:hover i {
+  color: var(--secondary-color); /* Change icon color on hover */
+}
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   footer .footer-column {
-    flex-basis: 100%; /* Each column takes full width on small screens */
+    flex-basis: 100%;
     text-align: center;
+  }
+
+  footer nav {
+    flex-direction: column;
+    align-items: center;
   }
 }
