@@ -151,6 +151,7 @@ section.visible {
 .btn-secondary:hover {
   background-color: var(--text-color);
 }
+
 /* Footer Styles */
 footer {
   background: var(--background-gradient);
@@ -161,13 +162,12 @@ footer {
 
 footer .footer-nav {
   display: flex;
-  justify-content: space-around; /* Ensure the footer columns are spread across the width */
-  flex-wrap: wrap; /* Ensure the columns wrap on smaller screens */
+  flex-direction: column; /* Ensure the footer items are stacked vertically */
+  align-items: center;
 }
 
 footer .footer-column {
-  flex-basis: 20%; /* Each column takes up 20% of the width, adjust if needed */
-  min-width: 200px; /* Minimum width to prevent squishing on small screens */
+  width: 100%; /* Each column takes the full width */
   margin-bottom: 20px;
   text-align: left;
 }
@@ -195,6 +195,25 @@ footer .footer-column ul li a:hover {
   text-decoration: underline;
 }
 
+/* Contact Info Email Styling */
+footer .footer-column a[href^="mailto"] {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer .footer-column a[href^="mailto"]:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icon Styling */
+footer .footer-column a i {
+  margin-right: 8px;
+}
+
+footer .footer-column a:hover i {
+  color: var(--secondary-color); /* Change icon color on hover */
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   footer .footer-nav {
@@ -203,7 +222,7 @@ footer .footer-column ul li a:hover {
   }
 
   footer .footer-column {
-    flex-basis: 100%; /* Full width for each column on mobile */
+    width: 100%; /* Full width for each column on mobile */
     text-align: center;
   }
 }
