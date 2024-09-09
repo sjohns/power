@@ -161,15 +161,13 @@ footer {
 }
 
 footer .footer-nav {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
 footer .footer-column {
-  flex-basis: 20%; /* Adjusted for more columns */
-  min-width: 200px;
   margin-bottom: 20px;
   text-align: left;
 }
