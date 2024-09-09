@@ -159,12 +159,19 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
+/*
 footer .footer-nav {
   display: block;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+*/
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 footer .footer-column {
