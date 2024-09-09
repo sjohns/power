@@ -1,4 +1,12 @@
 /* Define CSS variables for color consistency */
+
+/* Import Google Fonts and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+
+
 :root {
   --primary-color: #00509e;
   --secondary-color: #009e73;
