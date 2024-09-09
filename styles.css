@@ -160,7 +160,7 @@ footer {
   text-align: center;
 }
 
-footer nav {
+footer .footer-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
