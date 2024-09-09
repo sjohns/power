@@ -67,12 +67,7 @@ footer .footer-column a[href^="mailto"]:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design: Stack columns vertically on small screens */
-@media (max-width: 768px) {
-  footer .footer-nav {
-    flex-direction: column; /* Stack columns vertically on small screens */
-    align-items: center;
-  }
+
 
   footer .footer-column {
     flex-basis: 100%; /* Each column takes full width on small screens */
